@@ -14,4 +14,5 @@
 
 ## Technologies:
 
-React frontend and node-express backend
+React frontend
+Node-express backend
