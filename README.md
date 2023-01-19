@@ -6,6 +6,6 @@
 
 
 ### Frontend: 
-```npm run dev 
+``` npm run dev ```
 ### Backend : 
-``` cd server && node .
+``` cd server && node . ```
