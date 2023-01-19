@@ -5,5 +5,7 @@
 ## To start:
 
 
-Frontend: npm run dev 
-Backend : cd server && node .
+### Frontend: 
+```npm run dev 
+### Backend : 
+``` cd server && node .
