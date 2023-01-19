@@ -4,8 +4,14 @@
 
 ## To start:
 
+### Frontend:
 
-### Frontend: 
-``` npm run dev ```
-### Backend : 
-``` cd server && node . ```
+`npm run dev`
+
+### Backend :
+
+`cd server && node .`
+
+## Technologies:
+
+React frontend and node-express backend
