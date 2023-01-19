@@ -16,3 +16,5 @@
 
 React frontend
 Node-express backend
+cors
+chance
