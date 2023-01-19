@@ -1,20 +1,8 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 
-// let baseUrl = 'http://localhost:8080';
-function App() {
+function useAnimalSearch() {
     const [animals, setAnimals] = useState([]);
-    // const [searchUrl, setSearchUrl] = useState(baseUrl);
-
-    // useEffect(() => {
-    //     fetch(searchUrl)
-    //         .then((res) => res.json())
-    //         .then((data) => setAnimals(data));
-    // }, [searchUrl]);
-
-    // const search = (q) => {
-    //     setSearchUrl(baseUrl + '?q=' + q);
-    // };
 
     useEffect(() => {
         const lastQuery = localStorage.getItem('lastQuery');
@@ -30,6 +18,24 @@ function App() {
 
         localStorage.setItem('lastQuery', q);
     };
+
+    return { animals, search };
+}
+// let baseUrl = 'http://localhost:8080';
+function App() {
+    // const [searchUrl, setSearchUrl] = useState(baseUrl);
+
+    // useEffect(() => {
+    //     fetch(searchUrl)
+    //         .then((res) => res.json())
+    //         .then((data) => setAnimals(data));
+    // }, [searchUrl]);
+
+    // const search = (q) => {
+    //     setSearchUrl(baseUrl + '?q=' + q);
+    // };
+
+    const { animals, search } = useAnimalSearch();
 
     return (
         <main>
